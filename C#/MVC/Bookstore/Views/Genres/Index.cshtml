@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Bookstore.Models.Genre>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index - genres</h2>
+
+<p>
+    @Html.ActionLink("New Genre", "GenreForm", "Genres", null, new {@class = "btn btn-primary"})
+</p>
+
+<table class="table table-bordered table-hover" id="tblGenres">
+    <thead>
+    <tr>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+@section scripts
+{
+    <script>
+        $(function() {
+            $("#tblGenres").DataTable({
+                ajax: {
+                    url: "/api/genres",
+                    dataSrc: ""
+                },
+                columns: [
+                    {
+                        data: "name",
+                        render: function(data, type, genre) {
+                            return "<a href='/genres/edit/" + genre.id + "'>" + genre.name + "</a>";
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+}

@@ -1,0 +1,22 @@
+﻿<Window x:Class="CodeFirst.wndPredmet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CodeFirst"
+        mc:Ignorable="d"
+        Title="wndPredmet" Height="321.818" Width="300">
+    <Grid>
+        <DataGrid x:Name="grdPredmet" HorizontalAlignment="Left" Height="113" VerticalAlignment="Top" Width="272" Margin="10,0,0,0"/>
+        <Label Content="Predmet ID" HorizontalAlignment="Left" Margin="25,140,0,0" VerticalAlignment="Top"/>
+        <Label Content="Naziv Predmeta" HorizontalAlignment="Left" Margin="25,172,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPredmetID" HorizontalAlignment="Left" Height="23" Margin="133,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNazivPredmeta" HorizontalAlignment="Left" Height="23" Margin="133,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnUnos" Content="Unos" HorizontalAlignment="Left" Margin="8,248,0,0" VerticalAlignment="Top" Width="66" Click="Button_Click"/>
+        <Button x:Name="btnIzmena" Content="Izmena" HorizontalAlignment="Left" Margin="115,248,0,0" VerticalAlignment="Top" Width="66" Click="Button_Click_1"/>
+        <Button x:Name="btnBrisanje" Content="Brisanje" HorizontalAlignment="Left" Margin="214,249,0,0" VerticalAlignment="Top" Width="66" Click="Button_Click_2"/>
+        <Label Content="Profesor ID" HorizontalAlignment="Left" Height="25" Margin="25,203,0,0" VerticalAlignment="Top" Width="93"/>
+        <TextBox x:Name="txtProfesorID" HorizontalAlignment="Left" Height="25" Margin="133,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

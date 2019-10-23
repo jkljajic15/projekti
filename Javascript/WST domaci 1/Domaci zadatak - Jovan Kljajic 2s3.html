@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<style type="text/css">
+			#platno{
+				border: 5px solid black;}
+		</style>
+		
+		<script type="text/javascript">
+			var x;
+			var y;
+			function dohvatUnosa(){
+				var tekst = document.getElementById("unosTeksta");
+				var font = document.getElementById("unosFonta");
+				var boja = document.getElementById("unosBoje");
+			}
+
+			function mis(e){
+				var c = document.getElementById("platno");
+				var ctx = c.getContext("2d");
+				 x = e.clientX - c.offsetLeft;
+				 y = e.clientY - c.offsetTop;
+			}
+			
+			function nalepi(){
+				var tekst = document.getElementById("unosTeksta");
+				var font = document.getElementById("unosFonta");
+				var boja = document.getElementById("unosBoje");
+				c = document.getElementById("platno");
+				ctx = c.getContext("2d");
+				ctx.font = font.value;
+				ctx.fillStyle = boja.value;
+				ctx.fillText(tekst.value,x,y);
+				
+			}
+			
+
+		</script>
+	
+	</head>
+	<body>
+		<input type="text" id="unosTeksta" value="Tekst" onclick="dohvatUnosa();"></input>
+		<input type="text" id="unosFonta" value="12pt Calibri" onclick="dohvatUnosa();"></input>
+		<input type="text" id="unosBoje" value="green" onclick="dohvatUnosa();"></input>
+		</br>
+		<canvas width="500" height="500" id="platno" onmousemove="mis(event);" onclick="nalepi();"></canvas>
+	
+	</body>
+</html>

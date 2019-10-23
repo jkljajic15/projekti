@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Bookstore.Models.Publisher>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index - publishers</h2>
+
+<p>
+    @Html.ActionLink("New", "Create", "Publishers", new {area = ""}, new {@class = "btn btn-primary"})
+</p>
+
+@if (!Model.Any())
+{
+    <p>No publishers in the database</p>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Number of publications</th>
+        </tr>
+        </thead>
+        <tbody>
+            @foreach (var publisher in Model)
+            {
+                <tr>
+                    <td>@Html.ActionLink(publisher.Name, "Update", "Publishers", new { id = publisher.Id }, null)</td>
+                    <td>@publisher.Location</td>
+                    <td>@publisher.NumberOfPublications</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+

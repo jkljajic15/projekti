@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Bookstore.Models.Book>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index - books</h2>
+
+<p>
+    @Html.ActionLink("New book", "New", "Books", null, new {@class = "btn btn-primary"})
+</p>
+
+@if (!Model.Any())
+{
+    <p>No books in the database</p>
+}
+else
+{
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Date published</th>
+                <th>Author</th>
+                <th>Publisher</th>
+                <th>Genre</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var book in Model)
+        {
+            <tr>
+                <td>@Html.ActionLink(book.Name, "Edit", "Books", new { id = book.Id }, null)</td>
+                <td>@book.DatePublished.ToString("d MMM yyyy")</td>
+                <td>@book.Author.LastName</td>
+                <td>@book.Publisher.Name</td>
+                <td>@book.Genre.Name</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

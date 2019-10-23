@@ -1,0 +1,12 @@
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\DenormalizovanaCRUD\bin\Debug\DenormalizovanaCRUD.exe
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\DenormalizovanaCRUD\bin\Debug\DenormalizovanaCRUD.pdb
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\DenormalizovanaCRUD\obj\Debug\DenormalizovanaCRUD.csprojResolveAssemblyReference.cache
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\DenormalizovanaCRUD\obj\Debug\DenormalizovanaCRUD.frmBrisanje.resources
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\DenormalizovanaCRUD\obj\Debug\DenormalizovanaCRUD.frmIzmena.resources
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\DenormalizovanaCRUD\obj\Debug\DenormalizovanaCRUD.frmMeni.resources
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\DenormalizovanaCRUD\obj\Debug\DenormalizovanaCRUD.frmUnos.resources
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\DenormalizovanaCRUD\obj\Debug\DenormalizovanaCRUD.Properties.Resources.resources
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\DenormalizovanaCRUD\obj\Debug\DenormalizovanaCRUD.csproj.GenerateResource.Cache
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\DenormalizovanaCRUD\obj\Debug\DenormalizovanaCRUD.csproj.CoreCompileInputs.cache
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\DenormalizovanaCRUD\obj\Debug\DenormalizovanaCRUD.exe
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\DenormalizovanaCRUD\obj\Debug\DenormalizovanaCRUD.pdb

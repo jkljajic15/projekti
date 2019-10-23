@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLDomaci3", "CLDomaci3\CLDomaci3.csproj", "{E19A82C0-2583-42D6-BD88-03EF4099977D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLDomaci3Test", "CLDomaci3Test\CLDomaci3Test.csproj", "{784975CD-D27E-4EA2-B733-526033CF82C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLDomaci3Con", "CLDomaci3Con\CLDomaci3Con.csproj", "{C15017D7-0D39-4539-A37F-A7C43FC579AC}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "XMLWebServis", "XMLWebServis\", "{D9D8805D-0252-415C-887A-A2CC577691F2}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55415"
+		Debug.AspNetCompiler.PhysicalPath = "XMLWebServis\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55415\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55415"
+		Release.AspNetCompiler.PhysicalPath = "XMLWebServis\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55415\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55415"
+		SlnRelativePath = "XMLWebServis\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServisDemo", "WebServisDemo\WebServisDemo.csproj", "{6AC232C1-31AA-466A-941B-CA6375E038F1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D9D8805D-0252-415C-887A-A2CC577691F2} = {D9D8805D-0252-415C-887A-A2CC577691F2}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E19A82C0-2583-42D6-BD88-03EF4099977D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E19A82C0-2583-42D6-BD88-03EF4099977D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E19A82C0-2583-42D6-BD88-03EF4099977D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E19A82C0-2583-42D6-BD88-03EF4099977D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{784975CD-D27E-4EA2-B733-526033CF82C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{784975CD-D27E-4EA2-B733-526033CF82C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{784975CD-D27E-4EA2-B733-526033CF82C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{784975CD-D27E-4EA2-B733-526033CF82C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C15017D7-0D39-4539-A37F-A7C43FC579AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C15017D7-0D39-4539-A37F-A7C43FC579AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C15017D7-0D39-4539-A37F-A7C43FC579AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C15017D7-0D39-4539-A37F-A7C43FC579AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9D8805D-0252-415C-887A-A2CC577691F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9D8805D-0252-415C-887A-A2CC577691F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9D8805D-0252-415C-887A-A2CC577691F2}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9D8805D-0252-415C-887A-A2CC577691F2}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{6AC232C1-31AA-466A-941B-CA6375E038F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AC232C1-31AA-466A-941B-CA6375E038F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AC232C1-31AA-466A-941B-CA6375E038F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AC232C1-31AA-466A-941B-CA6375E038F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {227D018C-C5CA-4A7F-BAA2-533EF456BF38}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+C:\Users\Jovan Kljajic\source\repos\Domaci zadatak 2\Domaci zadatak 2\bin\Debug\Domaci zadatak 2.exe.config
+C:\Users\Jovan Kljajic\source\repos\Domaci zadatak 2\Domaci zadatak 2\bin\Debug\Domaci zadatak 2.exe
+C:\Users\Jovan Kljajic\source\repos\Domaci zadatak 2\Domaci zadatak 2\bin\Debug\Domaci zadatak 2.pdb
+C:\Users\Jovan Kljajic\source\repos\Domaci zadatak 2\Domaci zadatak 2\obj\Debug\Domaci zadatak 2.csprojResolveAssemblyReference.cache
+C:\Users\Jovan Kljajic\source\repos\Domaci zadatak 2\Domaci zadatak 2\obj\Debug\Domaci zadatak 2.csproj.CoreCompileInputs.cache
+C:\Users\Jovan Kljajic\source\repos\Domaci zadatak 2\Domaci zadatak 2\obj\Debug\Domaci zadatak 2.exe
+C:\Users\Jovan Kljajic\source\repos\Domaci zadatak 2\Domaci zadatak 2\obj\Debug\Domaci zadatak 2.pdb

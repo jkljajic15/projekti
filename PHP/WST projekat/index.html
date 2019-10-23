@@ -1,0 +1,45 @@
+<html>
+    <head>
+    
+    </head>
+    <body>
+        <h1>Registracija</h1>
+        <form action="Registracija.php" method="POST">
+            <table>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required></td>
+                </tr> 
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="username" required></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><input type="submit" value="Registruj se" name="submit"></td>
+                </tr>
+            </table>
+        </form>
+        <h1>Logovanje</h1>
+        <form action="logovanje.php" method="POST">
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><input type="submit" value="Uloguj se" name="login"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

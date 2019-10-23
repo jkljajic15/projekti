@@ -1,0 +1,12 @@
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\uskladisteneProcedureCRUD\bin\Debug\uskladisteneProcedureCRUD.exe
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\uskladisteneProcedureCRUD\bin\Debug\uskladisteneProcedureCRUD.pdb
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\uskladisteneProcedureCRUD\obj\Debug\UskladisteneProcedureCRUD.csprojResolveAssemblyReference.cache
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\uskladisteneProcedureCRUD\obj\Debug\uskladisteneProcedureCRUD.Meni.resources
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\uskladisteneProcedureCRUD\obj\Debug\uskladisteneProcedureCRUD.Properties.Resources.resources
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\uskladisteneProcedureCRUD\obj\Debug\uskladisteneProcedureCRUD.Unos.resources
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\uskladisteneProcedureCRUD\obj\Debug\UskladisteneProcedureCRUD.csproj.GenerateResource.Cache
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\uskladisteneProcedureCRUD\obj\Debug\UskladisteneProcedureCRUD.csproj.CoreCompileInputs.cache
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\uskladisteneProcedureCRUD\obj\Debug\uskladisteneProcedureCRUD.exe
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\uskladisteneProcedureCRUD\obj\Debug\uskladisteneProcedureCRUD.pdb
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\uskladisteneProcedureCRUD\obj\Debug\uskladisteneProcedureCRUD.Izmena.resources
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\uskladisteneProcedureCRUD\obj\Debug\uskladisteneProcedureCRUD.Brisanje.resources

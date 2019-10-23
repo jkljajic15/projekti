@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EntityDBModelStoreContainer" CdmEntityContainer="EntityDBEntities1">
+    <EntitySetMapping Name="Predmet">
+      <EntityTypeMapping TypeName="EntityDBModel.Predmet">
+        <MappingFragment StoreEntitySet="Predmet">
+          <ScalarProperty Name="PredmetID" ColumnName="PredmetID" />
+          <ScalarProperty Name="NaizvPredmeta" ColumnName="NaizvPredmeta" />
+          <ScalarProperty Name="SmerID" ColumnName="SmerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Smer">
+      <EntityTypeMapping TypeName="EntityDBModel.Smer">
+        <MappingFragment StoreEntitySet="Smer">
+          <ScalarProperty Name="SmerID" ColumnName="SmerID" />
+          <ScalarProperty Name="NazivSmera" ColumnName="NazivSmera" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Student">
+      <EntityTypeMapping TypeName="EntityDBModel.Student">
+        <MappingFragment StoreEntitySet="Student">
+          <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+          <ScalarProperty Name="Ime" ColumnName="Ime" />
+          <ScalarProperty Name="Prezime" ColumnName="Prezime" />
+          <ScalarProperty Name="SmerID" ColumnName="SmerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,9 @@
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Con\bin\Debug\CLDomaci3Con.exe.config
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Con\bin\Debug\CLDomaci3Con.exe
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Con\bin\Debug\CLDomaci3Con.pdb
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Con\bin\Debug\CLDomaci3.dll
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Con\bin\Debug\CLDomaci3.pdb
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Con\obj\Debug\CLDomaci3Con.csproj.CoreCompileInputs.cache
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Con\obj\Debug\CLDomaci3Con.exe
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Con\obj\Debug\CLDomaci3Con.pdb
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Con\obj\Debug\CLDomaci3Con.csprojResolveAssemblyReference.cache

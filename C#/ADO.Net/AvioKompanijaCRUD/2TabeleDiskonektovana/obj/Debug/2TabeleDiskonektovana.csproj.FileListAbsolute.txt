@@ -1,0 +1,9 @@
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\2TabeleDiskonektovana\bin\Debug\2TabeleDiskonektovana.exe
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\2TabeleDiskonektovana\bin\Debug\2TabeleDiskonektovana.pdb
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\2TabeleDiskonektovana\obj\Debug\2TabeleDiskonektovana.csprojResolveAssemblyReference.cache
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\2TabeleDiskonektovana\obj\Debug\_2TabeleDiskonektovana.Form1.resources
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\2TabeleDiskonektovana\obj\Debug\_2TabeleDiskonektovana.Properties.Resources.resources
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\2TabeleDiskonektovana\obj\Debug\2TabeleDiskonektovana.csproj.GenerateResource.Cache
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\2TabeleDiskonektovana\obj\Debug\2TabeleDiskonektovana.csproj.CoreCompileInputs.cache
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\2TabeleDiskonektovana\obj\Debug\2TabeleDiskonektovana.exe
+C:\Users\Jovan Kljajic\source\repos\AvioKompanijaCRUD\2TabeleDiskonektovana\obj\Debug\2TabeleDiskonektovana.pdb

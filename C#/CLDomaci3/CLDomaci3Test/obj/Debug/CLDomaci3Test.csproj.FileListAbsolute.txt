@@ -1,0 +1,12 @@
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Test\bin\Debug\CLDomaci3Test.exe.config
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Test\bin\Debug\CLDomaci3Test.exe
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Test\bin\Debug\CLDomaci3Test.pdb
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Test\bin\Debug\CLDomaci3.dll
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Test\bin\Debug\CLDomaci3.pdb
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Test\obj\Debug\CLDomaci3Test.csprojResolveAssemblyReference.cache
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Test\obj\Debug\CLDomaci3Test.Form1.resources
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Test\obj\Debug\CLDomaci3Test.Properties.Resources.resources
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Test\obj\Debug\CLDomaci3Test.csproj.GenerateResource.Cache
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Test\obj\Debug\CLDomaci3Test.csproj.CoreCompileInputs.cache
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Test\obj\Debug\CLDomaci3Test.exe
+C:\Users\Jovan Kljajic\source\repos\CLDomaci3\CLDomaci3Test\obj\Debug\CLDomaci3Test.pdb

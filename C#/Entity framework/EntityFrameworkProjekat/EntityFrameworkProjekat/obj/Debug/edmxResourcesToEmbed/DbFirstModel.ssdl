@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EntityDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Predmet">
+    <Key>
+      <PropertyRef Name="PredmetID" />
+    </Key>
+    <Property Name="PredmetID" Type="int" Nullable="false" />
+    <Property Name="NaizvPredmeta" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SmerID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Smer">
+    <Key>
+      <PropertyRef Name="SmerID" />
+    </Key>
+    <Property Name="SmerID" Type="int" Nullable="false" />
+    <Property Name="NazivSmera" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Name="StudentID" Type="int" Nullable="false" />
+    <Property Name="Ime" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Prezime" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SmerID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Predmet_Smer">
+    <End Role="Smer" Type="Self.Smer" Multiplicity="1" />
+    <End Role="Predmet" Type="Self.Predmet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Smer">
+        <PropertyRef Name="SmerID" />
+      </Principal>
+      <Dependent Role="Predmet">
+        <PropertyRef Name="SmerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Student_Smer">
+    <End Role="Smer" Type="Self.Smer" Multiplicity="1" />
+    <End Role="Student" Type="Self.Student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Smer">
+        <PropertyRef Name="SmerID" />
+      </Principal>
+      <Dependent Role="Student">
+        <PropertyRef Name="SmerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EntityDBModelStoreContainer">
+    <EntitySet Name="Predmet" EntityType="Self.Predmet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Smer" EntityType="Self.Smer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Predmet_Smer" Association="Self.FK_Predmet_Smer">
+      <End Role="Smer" EntitySet="Smer" />
+      <End Role="Predmet" EntitySet="Predmet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Student_Smer" Association="Self.FK_Student_Smer">
+      <End Role="Smer" EntitySet="Smer" />
+      <End Role="Student" EntitySet="Student" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

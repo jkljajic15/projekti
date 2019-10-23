@@ -1,0 +1,95 @@
+﻿@model Bookstore.Models.Genre
+@{
+    ViewBag.Title = "GenreForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Genre Form</h2>
+
+<div class="form-group">
+    @Html.LabelFor(g => g.Name)
+    @Html.TextBoxFor(g => g.Name, new { @class = "form-control" })
+</div>
+
+@Html.HiddenFor(g => g.Id)
+<div class="btn btn-group">
+    <button class="btn btn-primary" id="btnSave">Save</button>
+    <button class="btn btn-primary" id="btnDelete">Delete</button>
+</div>
+
+@section scripts
+{
+    <script>
+        $(function () {
+
+            $("#btnSave").on("click",
+                function () {
+
+                    var id = $("#Id").val();
+                    var name = $("#Name").val();
+
+                    if (id != 0) {
+                        $.ajax({
+                            type: "PUT",
+                            url: "/api/genres/" + id,
+                            data:
+                            {
+                                id: id,
+                                name: name
+                            },
+                            success: function(response) {
+                                alert("success");
+                                window.location.replace('/genres');
+                            },
+                            error: function() {
+                                alert("err");
+                            }
+                        });
+                    } else {
+                        $.ajax({
+                            type: "POST",
+                            url: "/api/genres/",
+                            data:
+                            {
+                                name: name
+                            },
+                            success: function(response) {
+                                alert("success");
+                                window.location.replace('/genres');
+                            },
+                            error: function() {
+                                alert("err");
+                            }
+                        });
+                    }
+
+                });
+
+            $("#btnDelete").on("click",
+                function () {
+
+                    var id = $("#Id").val();
+                    var name = $("#Name").val();
+
+                    $.ajax({
+                        type: "DELETE",
+                        url: "/api/genres/" + id,
+                        data:
+                        {
+                            id: id,
+                            name: name
+                        },
+                        success: function (response) {
+                            alert("success");
+                            window.location.replace('/genres');
+                        },
+                        error: function () {
+                            alert("err");
+                            window.location.replace('/genres');
+                        }
+                    });
+
+                });
+        });
+    </script>
+}

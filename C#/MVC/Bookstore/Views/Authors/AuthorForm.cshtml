@@ -1,0 +1,35 @@
+@model Bookstore.Models.Author
+@{
+    ViewBag.Title = "CreateEditDelete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Author Form</h2>
+
+@using (Html.BeginForm("Save", "Authors"))
+{
+    <div class="form-group">
+        @Html.LabelFor(a => a.FirstName)
+        @Html.TextBoxFor(a => a.FirstName, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(a => a.LastName)
+        @Html.TextBoxFor(a => a.LastName, new { @class = "form-control" })
+    </div>
+
+    @Html.HiddenFor(a => a.Id)
+    <p>
+        <button class="btn btn-primary" type="submit">Save</button>
+    </p>
+
+}
+
+@using (Html.BeginForm("Delete", "Authors"))
+{
+    @Html.HiddenFor(a => a.Id)
+    <p>
+        <button type="submit" class="btn btn-primary">Delete</button>
+    </p>
+}
+

@@ -1,0 +1,52 @@
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\bin\Debug\EntityFrameworkProjekat.exe.config
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\bin\Debug\EntityFrameworkProjekat.exe
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\bin\Debug\EntityFrameworkProjekat.pdb
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\bin\Debug\EntityFramework.dll
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\bin\Debug\EntityFramework.xml
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\DatabaseFirst.csprojResolveAssemblyReference.cache
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\MainWindow.g.cs
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\wndSmer.g.cs
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\App.g.cs
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\EntityFrameworkProjekat_Content.g.cs
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\EntityFrameworkProjekat_MarkupCompile.cache
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\EntityFrameworkProjekat_MarkupCompile.lref
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\MainWindow.baml
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\wndSmer.baml
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\EntityFrameworkProjekat.g.resources
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\EntityFrameworkProjekat.Properties.Resources.resources
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\DatabaseFirst.csproj.GenerateResource.Cache
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\EntityFrameworkProjekat.exe
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\EntityFrameworkProjekat.pdb
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\wndPredmet.g.cs
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\wndStudent.g.cs
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\wndPredmet.baml
+C:\Users\Jovan Kljajic\source\repos\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\wndStudent.baml
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\bin\Debug\EntityFrameworkProjekat.exe.config
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\bin\Debug\EntityFrameworkProjekat.exe
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\bin\Debug\EntityFrameworkProjekat.pdb
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\bin\Debug\EntityFramework.dll
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\bin\Debug\EntityFramework.SqlServer.dll
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\bin\Debug\EntityFramework.xml
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\bin\Debug\EntityFramework.SqlServer.xml
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\DatabaseFirst.csprojResolveAssemblyReference.cache
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\MainWindow.g.cs
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\wndPredmet.g.cs
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\wndSmer.g.cs
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\wndStudent.g.cs
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\App.g.cs
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\EntityFrameworkProjekat_Content.g.cs
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\EntityFrameworkProjekat_MarkupCompile.cache
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\EntityFrameworkProjekat_MarkupCompile.lref
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\MainWindow.baml
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\wndPredmet.baml
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\wndSmer.baml
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\wndStudent.baml
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\EntityFrameworkProjekat.g.resources
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\EntityFrameworkProjekat.Properties.Resources.resources
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\DatabaseFirst.csproj.GenerateResource.Cache
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\DatabaseFirst.csproj.CoreCompileInputs.cache
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\EntityFrameworkProjekat.exe
+D:\Desktop\EntityFrameworkProjekat\EntityFrameworkProjekat\obj\Debug\EntityFrameworkProjekat.pdb

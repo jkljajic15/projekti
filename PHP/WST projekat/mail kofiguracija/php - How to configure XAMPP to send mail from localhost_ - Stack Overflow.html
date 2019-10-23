@@ -1,0 +1,2196 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost -->
+<html itemscope="" itemtype="http://schema.org/QAPage"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>php - How to configure XAMPP to send mail from localhost? - Stack Overflow</title>
+    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+    <link rel="apple-touch-icon image_src" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="http://stackoverflow.com/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="stackoverflow.com">
+    <meta property="og:type" content="website">
+
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="How to configure XAMPP to send mail from localhost?">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="I am trying to send mail from localhost.
+but i am unable to send the mail from localhost
+so can anybody tell me that how to reconfigure my xampp to send mail from localhost">
+    <meta property="og:url" content="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost">
+    <link rel="canonical" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost">
+
+    
+    
+    <script type="text/javascript" async="" src="http://engine.adzerk.net/ados?t=1484404361835&amp;request={%22Placements%22:[{%22A%22:22,%22S%22:8277,%22D%22:%22adzerk931829807%22,%22AT%22:4,%22Z%22:[43]},{%22A%22:22,%22S%22:8277,%22D%22:%22adzerk1058364060%22,%22AT%22:4,%22Z%22:[44]},{%22A%22:22,%22S%22:8277,%22D%22:%22adzerk665909845%22,%22ATA%22:[5,17,2221],%22Z%22:[45]}],%22Keywords%22:%22php%2Cxampp%22,%22Referrer%22:%22https%3A%2F%2Fwww.google.rs%2F%22,%22IsAsync%22:true}"></script><script async="" src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/quant.js.download"></script><script async="" src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/beacon.js.download"></script><script async="" src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/analytics.js.download"></script><script type="text/javascript" async="" src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/ados.js.download"></script><script src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/jquery.min.js.download"></script>
+    <script src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/stub.en.js.download"></script>
+    <link rel="stylesheet" type="text/css" href="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/all.css">
+
+            <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;How to configure XAMPP to send mail from localhost?&#39;" href="http://stackoverflow.com/feeds/question/15965376">
+            <meta name="twitter:app:country" content="US">
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:iphone" content="871299723">
+            <meta name="twitter:app:url:iphone" content="se-zaphod://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost">
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:ipad" content="871299723">
+            <meta name="twitter:app:url:ipad" content="se-zaphod://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost">
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+        <script>
+        
+            StackExchange.ready(function () {
+                                    
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.initSnippetRenderer();
+                    });
+                    
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:4,shownCommentCount:4,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:15965376});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('1', '15965376');
+                                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text', true); });
+
+            });
+        </script>
+
+
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","serverTime":1484404379,"routeName":"Questions/Show","site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":1,"enableInsertDocLinkDialog":true,"enableSocialMediaInSharePopup":true},"user":{"fkey":"34c9fd3e1c2964dbf77869fd8a85a158","rep":0,"isAnonymous":true,"isAnonymousNetworkWide":true,"ab":{"question_show_tweaks":{"v":"altern_unansw_cta","g":1},"question_page_hero":{"v":"delay_hero_3","g":2},"simplified_signup_form":{"v":"multi_check_email_copy","g":4},"mobile_signup_link":{"v":"simplified_signup_form:rdn","g":1}}},"events":{"postType":{"question":1},"postEditionSection":{"title":1,"body":2,"tags":3}},"story":{"minCompleteBodyLength":75}}, {"site":{"allowImageUploads":true,"enableUserHovercards":true,"styleCode":true,"enableNewLinkInsertDialog":true,"enableNewHeaderDesign":true,"enableImgurHttps":true},"comments":{},"userProfile":{"openGraphAPIKey":"58740831ad23540e00c58987"},"tags":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true},"flags":{"allowRetractingFlags":true},"analytics":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000},"snippets":{"snippetsEnabled":true,"renderDomain":"stacksnippets.net"},"markdown":{"asteriskIntraWordEmphasis":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"15d182778781","js/moderator.en.js":"6ac1015d4659","js/full-anon.en.js":"5a02d7639c4a","js/full.en.js":"2198dec45407","js/wmd.en.js":"fe0fff246e0e","js/third-party/jquery.autocomplete.min.js":"d3b8fa7fdf74","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"20710353f000","js/help.en.js":"a56fdf9b9ff2","js/tageditor.en.js":"09862381cd28","js/tageditornew.en.js":"d948aae6259d","js/inline-tag-editing.en.js":"2ddfa79492e7","js/revisions.en.js":"4ba8f70874c4","js/review.en.js":"ef7e9021e3f1","js/tagsuggestions.en.js":"7dfec0d2a2d7","js/post-validation.en.js":"b90d9bbe9b32","js/explore-qlist.en.js":"e71f14781288","js/events.en.js":"89fa875cc613","js/keyboard-shortcuts.en.js":"d4b03fb75dbe","js/external-editor.en.js":"235e80f649d7","js/external-editor.en.js":"235e80f649d7","js/snippet-javascript.en.js":"07323978556c","js/snippet-javascript-codemirror.en.js":"c3f49676e067"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+<script async="" src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/full-anon.en.js.download"></script><script async="" src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/snippet-javascript.en.js.download"></script><script async="" src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/post-validation.en.js.download"></script><script async="" src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/prettify-full.en.js.download"></script><script type="text/javascript" src="http://static.adzerk.net/Extensions/adFeedback.js"></script><link rel="stylesheet" href="http://static.adzerk.net/Extensions/adFeedback.css"><link rel="stylesheet" href="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/jobs-multi.min.css" type="text/css"></head>
+<body class="question-page new-topbar">
+    <noscript>&lt;div id="noscript-padding"&gt;&lt;/div&gt;</noscript>
+            <script>(function () { var old = $.fn.contents; $.fn.contents = function () { try { return old.apply(this, arguments); } catch (e) { return $([]); } } })()</script>
+        
+
+
+
+
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+
+
+
+
+
+<div class="topbar">
+    <div class="topbar-wrapper">
+
+        <div class="js-topbar-dialog-corral">
+
+
+    <div class="topbar-dialog siteSwitcher-dialog dno">
+        <div class="header">
+            <h3><a href="http://stackoverflow.com/">current community</a>
+            </h3>
+        </div>
+        <div class="modal-content current-site-container">
+            <ul class="current-site">
+                    <li>
+                            <div class="related-links">
+                    <a href="http://chat.stackoverflow.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+            </div>
+
+
+
+
+    <a href="http://stackoverflow.com/" class="current-site-link site-link js-gps-track" data-id="1" data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+    </a>
+
+                    </li>
+                    <li class="related-site">
+                            <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                        
+
+
+
+    <a href="http://meta.stackoverflow.com/" class="site-link js-gps-track" data-id="552" data-gps-track="
+            site.switch({ target_site:552, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"></div>
+        Meta Stack Overflow
+    </a>
+
+                    </li>
+            </ul>
+        </div>
+
+        <div class="header" id="your-communities-header">
+            <h3>
+your communities            </h3>
+
+        </div>
+        <div class="modal-content" id="your-communities-section">
+
+                <div class="call-to-login">
+<a href="https://stackoverflow.com/users/signup?ssrc=site_switcher&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;amp;utm_source=stackoverflow.com&amp;amp;utm_medium=dev-story&amp;amp;utm_campaign=signup-redirect" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:10 })">Sign up</a> or <a href="https://stackoverflow.com/users/login?ssrc=site_switcher&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f15965376%2fhow-to-configure-xampp-to-send-mail-from-localhost" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:11 })">log in</a> to customize your list.
+                </div>
+        </div>
+
+        <div class="header">
+            <h3><a href="http://stackexchange.com/sites">more stack exchange communities</a>
+            </h3>
+            <a href="http://stackoverflow.blog/" class="fr">company blog</a>
+        </div>
+        <div class="modal-content">
+                <div class="child-content"></div>
+        </div>        
+    </div>
+        </div>
+
+        <div class="network-items">
+                <a href="http://stackexchange.com/" class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 163 Stack Exchange sites">
+                    <span class="hidden-text">Stack Exchange</span>
+                </a>
+
+    <a href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#" class="topbar-icon icon-inbox yes-hover js-inbox-button" title="Recent inbox messages">
+        <span class="hidden-text">Inbox</span>
+        <span class="unread-count" style="display:none"></span>
+    </a>
+    <a href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#" class="topbar-icon icon-achievements yes-hover js-achievements-button " data-unread-class="" title="Recent achievements: reputation, badges, and privileges earned">
+        <span class="hidden-text">Reputation and Badges</span>
+        <span class="unread-count" style="display:none">
+            
+        </span>
+    </a>
+        </div>
+
+        <div class="topbar-links">
+
+                <div class="links-container">
+                <span class="topbar-menu-links">
+                                    <a href="https://stackoverflow.com/users/signup?ssrc=head&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;utm_source=stackoverflow.com&amp;utm_medium=dev-story&amp;utm_campaign=signup-redirect" class="login-link" rel="nofollow">sign up</a>
+                                <a href="https://stackoverflow.com/users/login?ssrc=head&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f15965376%2fhow-to-configure-xampp-to-send-mail-from-localhost" class="login-link" rel="nofollow">log in</a>
+
+                            <a href="http://stackoverflow.com/tour">tour</a>
+        <a href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#" class="icon-help js-help-button" title="Help Center and other resources">
+            help
+            <span class="triangle"></span>
+        </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="http://stackoverflow.com/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="http://stackoverflow.com/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                        <li>
+                            <a href="http://meta.stackoverflow.com/" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                                Meta
+                                <span class="item-summary">
+                                    Discuss the workings and policies of this site
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://stackoverflow.com/company/about" class="js-gps-track" data-gps-track="help_popup.click({ item_type:6 })">
+                                About Us
+                                <span class="item-summary">
+                                    Learn more about Stack Overflow the company
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.stackoverflowbusiness.com/?ref=topbar_help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:7 })">
+                                Business
+                                <span class="item-summary">
+                                    Learn more about hiring developers or posting ads with us
+                                </span>
+                            </a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+                                            </span>
+                </div>
+
+            <div class="search-container">
+                <form id="search" action="http://stackoverflow.com/search" method="get" autocomplete="off">
+                        <input name="q" type="text" placeholder="Search Q&amp;A" value="" tabindex="1" autocomplete="off" maxlength="240">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+    </script>
+
+    <div class="container">
+        <div id="header">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="http://stackoverflow.com/">
+                    Stack Overflow
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                            <li class="youarehere">
+        <a id="nav-questions" href="http://stackoverflow.com/questions" class="js-gps-track" data-gps-track="top_nav.click({is_current:true, location:3, destination:1})">
+        Questions
+        </a>
+    </li>
+
+    <li>
+        <a id="nav-jobs" href="http://stackoverflow.com/jobs?med=site-ui&amp;ref=jobs-tab" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:6})">
+        Jobs
+        </a>
+    </li>
+                            <li>
+        <a id="nav-docs" href="http://stackoverflow.com/documentation" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:7})">
+        Documentation
+        </a>
+    </li>
+                            <li>
+        <a id="nav-tags" href="http://stackoverflow.com/tags" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:2})">
+        Tags
+        </a>
+    </li>
+
+                            <li>
+        <a id="nav-users" href="http://stackoverflow.com/users" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:3})">
+        Users
+        </a>
+    </li>
+
+                            <li>
+        <a id="nav-badges" href="http://stackoverflow.com/help/badges" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:4})">
+        Badges
+        </a>
+    </li>
+
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion" href="http://stackoverflow.com/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content" class="snippet-hidden">
+            
+
+<div itemscope="" itemtype="http://schema.org/Question">
+    <link itemprop="image" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+			<div id="question-header">
+                <h1 itemprop="name"><a href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost" class="question-hyperlink">How to configure XAMPP to send mail from localhost?</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="15965376" id="question">
+
+    <script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk931829807",4).setZone(43); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk931829807"></div>    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="15965376">
+        <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">132</span>
+        <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+
+        <a class="star-off" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#">favorite</a>
+        <div class="favoritecount"><b>82</b></div>
+
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+<p>I am trying to send mail from localhost.
+but i am unable to send the mail from localhost
+so can anybody tell me that how to reconfigure my xampp to send mail from localhost </p>
+    </div>
+    <div class="post-taglist">
+        <a href="http://stackoverflow.com/questions/tagged/php" class="post-tag js-gps-track" title="show questions tagged &#39;php&#39;" rel="tag">php</a> <a href="http://stackoverflow.com/questions/tagged/xampp" class="post-tag js-gps-track" title="show questions tagged &#39;xampp&#39;" rel="tag">xampp</a> 
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/q/15965376" title="short permalink to this question" class="short-link" id="link-post-15965376">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/15965376/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/15965376/revisions" title="show all edits to this post">edited <span title="2013-04-12 07:21:50Z" class="relativetime">Apr 12 '13 at 7:21</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/188331/raptor"><div class="gravatar-wrapper-32"><img src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/UhYfd.jpg" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/188331/raptor">Raptor</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 27,861" dir="ltr">27.9k</span><span title="26 gold badges"><span class="badge1"></span><span class="badgecount">26</span></span><span title="131 silver badges"><span class="badge2"></span><span class="badgecount">131</span></span><span title="227 bronze badges"><span class="badge3"></span><span class="badgecount">227</span></span>
+        </div>
+    </div>
+</div>    </td>
+    <td class="post-signature owner">
+        <div class="user-info ">
+    <div class="user-action-time">
+        asked <span title="2013-04-12 07:20:00Z" class="relativetime">Apr 12 '13 at 7:20</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/2273313/farid-shaikh"><div class="gravatar-wrapper-32"><img src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/da64c769bd770d86089ff96205618901" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/2273313/farid-shaikh">farid shaikh</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">670</span><span title="2 gold badges"><span class="badge1"></span><span class="badgecount">2</span></span><span title="6 silver badges"><span class="badge2"></span><span class="badgecount">6</span></span><span title="3 bronze badges"><span class="badge3"></span><span class="badgecount">3</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</td>
+        </tr>
+                    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-15965376" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-22754881" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Can we see your code?</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/2143812/speeday125" title="2,050 reputation" class="comment-user">speeday125</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment22754881_15965376"><span title="2013-04-12 07:21:03Z" class="relativetime-clean">Apr 12 '13 at 7:21</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-22754904" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Impossible to help if you don't give us the current configuration.</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/1248114/arkascha" title="21,620 reputation" class="comment-user">arkascha</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment22754904_15965376"><span title="2013-04-12 07:22:17Z" class="relativetime-clean">Apr 12 '13 at 7:22</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-32277939" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Is this still relevant with Mercury included (ApacheFriends XAMPP 1.8.2)? I would think yes, but if there are people preferring Mercury, please indicate below. :) Thanks!</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/1091386/icedwater" title="2,802 reputation" class="comment-user">icedwater</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment32277939_15965376"><span title="2014-01-28 07:21:53Z" class="relativetime-clean">Jan 28 '14 at 7:21</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-57310636" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Possible duplicate of <a href="http://stackoverflow.com/questions/24514432/sendmail-exe-opens-on-sending-mail">sendmail.exe opens on sending mail</a></span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/2476238/pascal" title="844 reputation" class="comment-user">Pascal</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment57310636_15965376"><span title="2016-01-14 06:49:22Z" class="relativetime-clean">Jan 14 '16 at 6:49</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-15965376" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#" onclick=""></a>
+        </div>         
+    </td>
+</tr>        </tbody></table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								7 Answers
+                                <span style="display:none;" itemprop="answerCount">7</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first" data-value="active" data-shortcut="A">
+            active</a>
+        <a href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided" data-value="oldest" data-shortcut="O">
+            oldest</a>
+        <a class="youarehere" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost?answertab=votes#tab-top" data-nav-xhref="" title="Answers with the highest score first" data-value="votes" data-shortcut="V">
+            votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="18185233"></a>
+<div id="answer-18185233" class="answer" data-answerid="18185233" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="18185233">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">196</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You can send mail from localhost with sendmail package , sendmail package is inbuild in XAMPP.
+So if you are using XAMPP then you can easily send mail from localhost.</p>
+
+<p>for example you can configure <code>C:\xampp\php\php.ini</code> and <code>c:\xampp\sendmail\sendmail.ini</code> for gmail to send mail.</p>
+
+<p>in <code>C:\xampp\php\php.ini</code> find <code>extension=php_openssl.dll</code> and remove the semicolon from the beginning of that line to make SSL working for gmail for localhost.</p>
+
+<p>in php.ini file find <code>[mail function]</code> and change</p>
+
+<pre class="lang-php prettyprint prettyprinted"><code><span class="pln">SMTP</span><span class="pun">=</span><span class="pln">smtp</span><span class="pun">.</span><span class="pln">gmail</span><span class="pun">.</span><span class="pln">com
+smtp_port</span><span class="pun">=</span><span class="lit">587</span><span class="pln">
+sendmail_from </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">my</span><span class="pun">-</span><span class="pln">gmail</span><span class="pun">-</span><span class="pln">id@gmail</span><span class="pun">.</span><span class="pln">com
+sendmail_path </span><span class="pun">=</span><span class="pln"> </span><span class="str">"\"C:\xampp\sendmail\sendmail.exe\" -t"</span></code></pre>
+
+<p>Now Open <code>C:\xampp\sendmail\sendmail.ini</code>. Replace all the existing code in sendmail.ini with following code</p>
+
+<pre class="lang-php prettyprint prettyprinted"><code><span class="pun">[</span><span class="pln">sendmail</span><span class="pun">]</span><span class="pln">
+
+smtp_server</span><span class="pun">=</span><span class="pln">smtp</span><span class="pun">.</span><span class="pln">gmail</span><span class="pun">.</span><span class="pln">com
+smtp_port</span><span class="pun">=</span><span class="lit">587</span><span class="pln">
+error_logfile</span><span class="pun">=</span><span class="pln">error</span><span class="pun">.</span><span class="pln">log
+debug_logfile</span><span class="pun">=</span><span class="pln">debug</span><span class="pun">.</span><span class="pln">log
+auth_username</span><span class="pun">=</span><span class="kwd">my</span><span class="pun">-</span><span class="pln">gmail</span><span class="pun">-</span><span class="pln">id@gmail</span><span class="pun">.</span><span class="pln">com
+auth_password</span><span class="pun">=</span><span class="kwd">my</span><span class="pun">-</span><span class="pln">gmail</span><span class="pun">-</span><span class="pln">password
+force_sender</span><span class="pun">=</span><span class="kwd">my</span><span class="pun">-</span><span class="pln">gmail</span><span class="pun">-</span><span class="pln">id@gmail</span><span class="pun">.</span><span class="pln">com</span></code></pre>
+
+<p>Now you have done!! create php file with mail function and send mail from localhost.</p>
+
+<p>PS: don't forgot to replace <strong>my-gmail-id</strong> and  <strong>my-gmail-password</strong> in above code.
+Also, don't forget to remove duplicate keys if you copied settings from above. For example comment following line if there is another <strong>sendmail_path</strong> : <code>sendmail_path="C:\xampp\mailtodisk\mailtodisk.exe"</code> in the php.ini file</p>
+
+<p>Also remember to restart the server using the XAMMP control panel so the changes take effect.</p>
+
+<p>For gmail please check <a href="https://support.google.com/accounts/answer/6010255">https://support.google.com/accounts/answer/6010255</a> to allow access from less secure apps.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/18185233" title="short permalink to this answer" class="short-link" id="link-post-18185233">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/18185233/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/18185233/revisions" title="show all edits to this post">edited <span title="2016-01-25 16:45:45Z" class="relativetime">Jan 25 '16 at 16:45</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2013-08-12 10:57:03Z" class="relativetime">Aug 12 '13 at 10:57</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/2560923/vikas-dwivedi"><div class="gravatar-wrapper-32"><img src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/lREcG.png" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/2560923/vikas-dwivedi">Vikas Dwivedi</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">2,131</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="6 silver badges"><span class="badge2"></span><span class="badgecount">6</span></span><span title="8 bronze badges"><span class="badge3"></span><span class="badgecount">8</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-18185233" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="16" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-27876854" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">other than the configs above, i needed to update my sendmail <a href="http://glob.com.au/sendmail/" rel="nofollow noreferrer">glob.com.au/sendmail</a></span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/813819/kaz" title="505 reputation" class="comment-user">kaz</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment27876854_18185233"><span title="2013-09-19 06:10:02Z" class="relativetime-clean">Sep 19 '13 at 6:10</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-31396558" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I had to upgrade from XAMMP 1.7.7 to 2.8.2.3 -- sendmail is included in the newer XAMPP. I tried using a newer sendmail with 1.7.7 a few months ago and couldn't get it to work -- finally bit the bullet and used the new XAMPP and it works as described.</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/436397/vanalbert" title="372 reputation" class="comment-user">VanAlbert</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment31396558_18185233"><span title="2014-01-03 22:00:22Z" class="relativetime-clean">Jan 3 '14 at 22:00</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-41375941" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">1</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I believe the location C:\xampp\php\php.ini refers to windows environments. For mac look in xamppfiles/etc for your php.ini file.</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/1077423/paul-trotter" title="362 reputation" class="comment-user">Paul Trotter</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment41375941_18185233"><span title="2014-10-14 10:46:06Z" class="relativetime-clean">Oct 14 '14 at 10:46</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-41819212" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Vikas answer was best, but please note that using the default ssl on smtp_port might not work in certain condition, using 465 as Thirumalai murugan answer has stated actually fixed it for me</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/2262439/temitayo" title="314 reputation" class="comment-user">Temitayo</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment41819212_18185233"><span title="2014-10-28 07:38:51Z" class="relativetime-clean">Oct 28 '14 at 7:38</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-48904887" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">It is only for gmail? thanks..</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/4773326/pcs" title="1,605 reputation" class="comment-user">pcs</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment48904887_18185233"><span title="2015-05-23 04:09:43Z" class="relativetime-clean">May 23 '15 at 4:09</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-18185233" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link  dno" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#" onclick="">show <b>16</b> more comments</a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk1058364060",4).setZone(44); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk1058364060"><a href="http://engine.adzerk.net/r?e=eyJhdiI6NDE0LCJhdCI6NCwiYnQiOjAsImNtIjo1MjcxODEsImNoIjoxMTc4LCJjayI6e30sImNyIjoxODU3ODg5LCJkaSI6IjFmMTcyYTdjMTkxMjRlOTJiMmQwNjVlOTQxNjk1MjNkIiwiZG0iOjEsImZjIjoyMjMwMjEwLCJmbCI6MjY4MDYyMCwiaXAiOiIyMTIuMTc4LjIzMy43MSIsImt3IjoicGhwLHhhbXBwIiwibnciOjIyLCJwYyI6MCwiZWMiOjAsInByIjoxNjA0LCJydCI6MiwicmYiOiJodHRwczovL3d3dy5nb29nbGUucnMvIiwic3QiOjgyNzcsInVrIjoidWUxLTc1YzFiY2U4MGYwOTRmNTViNmVjNTY4Mzg2YjFlN2NhIiwiem4iOjQ0LCJ0cyI6MTQ4NDQwNDM4MDI2OSwiYmYiOnRydWUsInBuIjoiYWR6ZXJrMTA1ODM2NDA2MCIsInVyIjoiaHR0cHM6Ly93d3cuc3VydmV5bW9ua2V5LmNvLnVrL3IvVERMUFNZTiJ9&amp;s=r1OCIl9vO1h4yo4WctLopT9rlxo" rel="nofollow" target="_blank" title=""><img src="http://static.adzerk.net/Advertisers/cc1eb03b0d8e42e7816bfc41634f9744.png" title="" alt="" border="0" width="728" height="90" style="display: none !important;"></a><img height="0px" width="0px" border="0" style="position: absolute; display: none !important;" src="http://engine.adzerk.net/i.gif?e=eyJhdiI6NDE0LCJhdCI6NCwiYnQiOjAsImNtIjo1MjcxODEsImNoIjoxMTc4LCJjayI6e30sImNyIjoxODU3ODg5LCJkaSI6IjFmMTcyYTdjMTkxMjRlOTJiMmQwNjVlOTQxNjk1MjNkIiwiZG0iOjEsImZjIjoyMjMwMjEwLCJmbCI6MjY4MDYyMCwiaXAiOiIyMTIuMTc4LjIzMy43MSIsImt3IjoicGhwLHhhbXBwIiwibnciOjIyLCJwYyI6MCwiZWMiOjAsInByIjoxNjA0LCJydCI6MiwicmYiOiJodHRwczovL3d3dy5nb29nbGUucnMvIiwic3QiOjgyNzcsInVrIjoidWUxLTc1YzFiY2U4MGYwOTRmNTViNmVjNTY4Mzg2YjFlN2NhIiwiem4iOjQ0LCJ0cyI6MTQ4NDQwNDM4MDI3MCwiYmYiOnRydWUsInBuIjoiYWR6ZXJrMTA1ODM2NDA2MCIsImZxIjowfQ&amp;s=G-zSylQOjZFDxnWCswaidY-pJhk"></div>
+  
+<a name="31385001"></a>
+<div id="answer-31385001" class="answer" data-answerid="31385001" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="31385001">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">23</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>In XAMPP v3.2.1 for testing purposes you can see the emails that the XAMPP sends in XAMPP/mailoutput. In my case on Windows 8 this did not require any additional configuration and was a simple solution to testing email</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/31385001" title="short permalink to this answer" class="short-link" id="link-post-31385001">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/31385001/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2015-07-13 13:41:07Z" class="relativetime">Jul 13 '15 at 13:41</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/1077423/paul-trotter"><div class="gravatar-wrapper-32"><img src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/9821c5995fe2cc615b6320cd919d8a6d" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/1077423/paul-trotter">Paul Trotter</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">362</span><span title="3 silver badges"><span class="badge2"></span><span class="badgecount">3</span></span><span title="8 bronze badges"><span class="badge3"></span><span class="badgecount">8</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-31385001" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-61799969" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">And if this isn't working, check your <code>c:\xampp\php\php.ini</code>, look for <code>[mail function]</code>, and uncomment the line that mentions <code>mailtodisk.exe</code>. Keep every other line in this section commented out except for the <code>mail.add_x_header</code> one.</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/1982136/tim-malone" title="1,274 reputation" class="comment-user">Tim Malone</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment61799969_31385001"><span title="2016-05-10 05:33:41Z" class="relativetime-clean">May 10 '16 at 5:33</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-68517897" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">As an addemdum to my comment above, for the more recent versions of XAMPP, you may need to manually add the mailtodisk line. It should look something like this: <code>sendmail_path="C:\xampp\mailtodisk\mailtodisk.exe"</code></span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/1982136/tim-malone" title="1,274 reputation" class="comment-user">Tim Malone</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment68517897_31385001"><span title="2016-11-16 21:46:38Z" class="relativetime-clean">Nov 16 '16 at 21:46</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-31385001" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="23061280"></a>
+<div id="answer-23061280" class="answer" data-answerid="23061280" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="23061280">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">17</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>Its very simple to receive emails on localhost or local server</p>
+
+<p>Note: I am using the test mail server software on Windows 7 64bit with Xampp installed</p>
+
+<p>Just download test mail server tool and install according to the instruction given on its website <a href="http://www.toolheap.com/test-mail-server-tool/">Test Mail Server Tool</a></p>
+
+<p>Now you need to change only two lines under <code>php.ini</code> file</p>
+
+<ol>
+<li>Find <code>[mail function]</code> and remove semi colon which is before <code>;smtp = localhost</code></li>
+<li>Put the semi colon before <code>sendmail_path = "C:\xampp\mailtodisk\mailtodisk.exe"</code></li>
+</ol>
+
+<p>You don't need to change anything else, but if you still not getting emails than check for the <code>SMTP port</code>, the port number must be same.</p>
+
+<p>The above method is for default settings provided by the Xampp software.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/23061280" title="short permalink to this answer" class="short-link" id="link-post-23061280">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/23061280/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://stackoverflow.com/posts/23061280/revisions" title="show all edits to this post">edited <span title="2014-11-24 19:11:59Z" class="relativetime">Nov 24 '14 at 19:11</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-04-14 13:21:53Z" class="relativetime">Apr 14 '14 at 13:21</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/2733431/vikas-khunteta"><div class="gravatar-wrapper-32"><img src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/QEeTT.jpg" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/2733431/vikas-khunteta">Vikas Khunteta</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">567</span><span title="6 silver badges"><span class="badge2"></span><span class="badgecount">6</span></span><span title="11 bronze badges"><span class="badge3"></span><span class="badgecount">11</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-23061280" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-46871018" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">4</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">If you don't trust that site, you might want to use papercut from codeplex instead: <a href="https://papercut.codeplex.com/" rel="nofollow noreferrer">papercut.codeplex.com</a>.</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/982075/marcel-burkhard" title="2,255 reputation" class="comment-user">Marcel Burkhard</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment46871018_23061280"><span title="2015-03-30 09:00:06Z" class="relativetime-clean">Mar 30 '15 at 9:00</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-50565854" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I did not have to do anything to make it work, just install it.</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/488074/vonubisch" title="832 reputation" class="comment-user">vonUbisch</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment50565854_23061280"><span title="2015-07-08 08:08:59Z" class="relativetime-clean">Jul 8 '15 at 8:08</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-69597997" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Question: "How to configure XAMPP to <b><i>send</i></b> mail from localhost?" Anwer: "Its very simple to <b><i>receive</i></b> emails on localhost or local server" - 17 upvotes??</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/192910/mawg" title="11,313 reputation" class="comment-user">Mawg</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment69597997_23061280"><span title="2016-12-17 13:57:28Z" class="relativetime-clean">Dec 17 '16 at 13:57</span></a></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-23061280" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="15965456"></a>
+<div id="answer-15965456" class="answer" data-answerid="15965456" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="15965456">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">10</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You have to configure SMTP on your server</p>
+
+<p>You can use the googles free SMTP server 
+Pretty easy to setup too.</p>
+
+<p>study about php mailer in this <a href="https://code.google.com/a/apache-extras.org/p/phpmailer/wiki/PHPMailer?tm=6">link</a> </p>
+
+<pre class="lang-php prettyprint prettyprinted"><code><span class="pun">&lt;?</span><span class="pln">php
+
+$mail </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">PHPMailer</span><span class="pun">(</span><span class="kwd">true</span><span class="pun">);</span><span class="pln">
+
+</span><span class="com">//Send mail using gmail</span><span class="pln">
+</span><span class="kwd">if</span><span class="pun">(</span><span class="pln">$send_using_gmail</span><span class="pun">){</span><span class="pln">
+    $mail</span><span class="pun">-&gt;</span><span class="typ">IsSMTP</span><span class="pun">();</span><span class="pln"> </span><span class="com">// telling the class to use SMTP</span><span class="pln">
+    $mail</span><span class="pun">-&gt;</span><span class="typ">SMTPAuth</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">;</span><span class="pln"> </span><span class="com">// enable SMTP authentication</span><span class="pln">
+    $mail</span><span class="pun">-&gt;</span><span class="typ">SMTPSecure</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"ssl"</span><span class="pun">;</span><span class="pln"> </span><span class="com">// sets the prefix to the servier</span><span class="pln">
+    $mail</span><span class="pun">-&gt;</span><span class="typ">Host</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"smtp.gmail.com"</span><span class="pun">;</span><span class="pln"> </span><span class="com">// sets GMAIL as the SMTP server</span><span class="pln">
+    $mail</span><span class="pun">-&gt;</span><span class="typ">Port</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">465</span><span class="pun">;</span><span class="pln"> </span><span class="com">// set the SMTP port for the GMAIL server</span><span class="pln">
+    $mail</span><span class="pun">-&gt;</span><span class="typ">Username</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"your-gmail-account@gmail.com"</span><span class="pun">;</span><span class="pln"> </span><span class="com">// GMAIL username</span><span class="pln">
+    $mail</span><span class="pun">-&gt;</span><span class="typ">Password</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"your-gmail-password"</span><span class="pun">;</span><span class="pln"> </span><span class="com">// GMAIL password</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="com">//Typical mail data</span><span class="pln">
+$mail</span><span class="pun">-&gt;</span><span class="typ">AddAddress</span><span class="pun">(</span><span class="pln">$email</span><span class="pun">,</span><span class="pln"> $name</span><span class="pun">);</span><span class="pln">
+$mail</span><span class="pun">-&gt;</span><span class="typ">SetFrom</span><span class="pun">(</span><span class="pln">$email_from</span><span class="pun">,</span><span class="pln"> $name_from</span><span class="pun">);</span><span class="pln">
+$mail</span><span class="pun">-&gt;</span><span class="typ">Subject</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"My Subject"</span><span class="pun">;</span><span class="pln">
+$mail</span><span class="pun">-&gt;</span><span class="typ">Body</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="str">"Mail contents"</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">try</span><span class="pun">{</span><span class="pln">
+    $mail</span><span class="pun">-&gt;</span><span class="typ">Send</span><span class="pun">();</span><span class="pln">
+    echo </span><span class="str">"Success!"</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pun">(</span><span class="typ">Exception</span><span class="pln"> $e</span><span class="pun">){</span><span class="pln">
+    </span><span class="com">//Something went bad</span><span class="pln">
+    echo </span><span class="str">"Fail :("</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="pun">?&gt;</span></code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/15965456" title="short permalink to this answer" class="short-link" id="link-post-15965456">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/15965456/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-04-12 07:25:13Z" class="relativetime">Apr 12 '13 at 7:25</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/538669/thirumalai-murugan"><div class="gravatar-wrapper-32"><img src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/29b3c9130a11627f005258dd3ef1b767" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/538669/thirumalai-murugan">Thirumalai murugan</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">2,621</span><span title="4 gold badges"><span class="badge1"></span><span class="badgecount">4</span></span><span title="21 silver badges"><span class="badge2"></span><span class="badgecount">21</span></span><span title="45 bronze badges"><span class="badge3"></span><span class="badgecount">45</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-15965456" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-41819197" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Vikas answer was best, but please note that using the default ssl on smtp_port might not work in certain condition, using 465 as this answer has stated actually fixed it for me</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/2262439/temitayo" title="314 reputation" class="comment-user">Temitayo</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment41819197_15965456"><span title="2014-10-28 07:38:11Z" class="relativetime-clean">Oct 28 '14 at 7:38</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-41821125" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Temitayo have you tried my answer?</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/538669/thirumalai-murugan" title="2,621 reputation" class="comment-user">Thirumalai murugan</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment41821125_15965456"><span title="2014-10-28 08:51:51Z" class="relativetime-clean">Oct 28 '14 at 8:51</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-41983229" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Iused @Vikas answer but I used a fragment from yours i.e. using 465 as emtp_port. Good work anyway</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/2262439/temitayo" title="314 reputation" class="comment-user">Temitayo</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment41983229_15965456"><span title="2014-11-01 22:35:20Z" class="relativetime-clean">Nov 1 '14 at 22:35</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-58469129" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy"><b><i>Fatal error:</i></b><i> Class 'PHPMailer' not found in C:\xampp\htdocs\myweb\email_script.php on line 82</i></span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/2805376/shafizadeh" title="4,495 reputation" class="comment-user">Shafizadeh</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment58469129_15965456"><span title="2016-02-13 16:17:45Z" class="relativetime-clean">Feb 13 '16 at 16:17</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-58549493" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">you have to download the phpmailer <a href="https://github.com/Synchro/PHPMailer" rel="nofollow noreferrer">github.com/Synchro/PHPMailer</a></span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/538669/thirumalai-murugan" title="2,621 reputation" class="comment-user">Thirumalai murugan</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment58549493_15965456"><span title="2016-02-16 06:10:01Z" class="relativetime-clean">Feb 16 '16 at 6:10</span></a></span>
+                        <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-15965456" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="24060951"></a>
+<div id="answer-24060951" class="answer" data-answerid="24060951" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="24060951">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">4</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>For people on windows 8 if you want to do this i would really recommend reading this tutorial i found: <a href="http://yogeshchaugule.com/blog/2013/configure-sendmail-wamp" rel="nofollow">http://yogeshchaugule.com/blog/2013/configure-sendmail-wamp</a></p>
+
+<p>Its not written by me but after slamming my head into a concrete wall for 2,5 hours not getting this to work with the weirdest errors like: </p>
+
+<ul>
+<li>Connection timed out.</li>
+<li>Connection Closed Gracefully.</li>
+</ul>
+
+<p>I finally found that tutorial were upon installation of <a href="https://www.stunnel.org/downloads.html" rel="nofollow">https://www.stunnel.org/downloads.html</a> and the configuration of Stunnel. It finally worked. </p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/24060951" title="short permalink to this answer" class="short-link" id="link-post-24060951">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/24060951/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-06-05 13:01:33Z" class="relativetime">Jun 5 '14 at 13:01</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/1957541/schippie"><div class="gravatar-wrapper-32"><img src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/4a7aae32f78a4870255006fc294d3e84" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/1957541/schippie">Schippie</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">754</span><span title="3 gold badges"><span class="badge1"></span><span class="badgecount">3</span></span><span title="9 silver badges"><span class="badge2"></span><span class="badgecount">9</span></span><span title="19 bronze badges"><span class="badge3"></span><span class="badgecount">19</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-24060951" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-37691849" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I had the exact same issue (Connection Closed Gracefully) and I was able to fix it by installing stunnel by following the steps mentioned here: <a href="http://digiex.net/guides-reviews/guides-tutorials/application-guides/544-configuring-php-under-windows-use-gmail-external-smtp-server-ssl.html#post25126" rel="nofollow noreferrer">digiex.net/guides-reviews/guides-tutorials/application-guide‌​s/…</a> with a very slight change, I had to comment the <code>output</code>, <code>debug</code> and <code>socket</code> parameters from stunnel.conf as they were throwing an error. Upvoted.</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/925603/special-k" title="359 reputation" class="comment-user">Special K.</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment37691849_24060951"><span title="2014-06-23 18:46:12Z" class="relativetime-clean">Jun 23 '14 at 18:46</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-24060951" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="15965471"></a>
+<div id="answer-15965471" class="answer" data-answerid="15965471" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="15965471">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">0</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You have to define an <code>SMTP</code> server and a port for this. All except like sending mails from live hosts.</p>
+
+<p><a href="http://roshanbh.com.np/2007/12/sending-e-mail-from-localhost-in-php-in-windows-environment.html" rel="nofollow">This is a useful link regarding this</a>.</p>
+
+<blockquote>
+  <p>NB: The port should be unused. Please take care that, Some
+  applications like <code>Skype</code> uses the default ports and there by prevents
+  sending mail.</p>
+</blockquote>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/15965471" title="short permalink to this answer" class="short-link" id="link-post-15965471">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/15965471/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2013-04-12 07:25:55Z" class="relativetime">Apr 12 '13 at 7:25</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/1455317/vishnu-renku"><div class="gravatar-wrapper-32"><img src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/fc8703ebceaf742c863bd2c1f209e5de" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/1455317/vishnu-renku">Vishnu Renku</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,523</span><span title="2 gold badges"><span class="badge1"></span><span class="badgecount">2</span></span><span title="17 silver badges"><span class="badge2"></span><span class="badgecount">17</span></span><span title="37 bronze badges"><span class="badge3"></span><span class="badgecount">37</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-15965471" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-44696905" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">You can prevent skype from using port 80. its on connection settings of skype</span>
+                    –&nbsp;<a href="http://stackoverflow.com/users/626485/astroanu" title="1,587 reputation" class="comment-user">astroanu</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#comment44696905_15965471"><span title="2015-01-27 03:54:26Z" class="relativetime-clean">Jan 27 '15 at 3:54</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-15965471" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="20884409"></a>
+<div id="answer-20884409" class="answer" data-answerid="20884409" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="20884409">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">0</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>just spent over an hour trying to make this work. for everybody having the same trouble with all the suggestions posted not working: you have to restart Apache in your XAMPP inrerface! just restarting XAMPP wont work!!</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/20884409" title="short permalink to this answer" class="short-link" id="link-post-20884409">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/20884409/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2014-01-02 13:46:50Z" class="relativetime">Jan 2 '14 at 13:46</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://stackoverflow.com/users/3065579/user3065579"><div class="gravatar-wrapper-32"><img src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/fusn3.jpg" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/3065579/user3065579">user3065579</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">10</span><span title="4 bronze badges"><span class="badge3"></span><span class="badgecount">4</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-20884409" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-20884409" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+				    <div class="question-status">
+        <h2>                    <b>protected</b> by <a href="http://stackoverflow.com/users/-1/community">Community</a><span class="mod-flair" title="moderator">♦</span> <span dir="ltr"><span title="2015-01-11 09:06:32Z" class="relativetime">Jan 11 '15 at 9:06</span></span>
+</h2>
+        <p>
+Thank you for your interest in this question. 
+Because it has attracted low-quality or spam answers that had to be removed, posting an answer now requires 10 <a href="http://stackoverflow.com/help/whats-reputation">reputation</a> on this site (the <a href="http://stackoverflow.com/help/privileges/new-user">association bonus does not count</a>).
+<br><br>
+Would you like to answer one of these <a href="http://stackoverflow.com/unanswered?fromProtectedNotice=true">unanswered questions</a> instead?
+</p>
+    </div>
+
+
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you're looking for?							Browse other questions tagged <a href="http://stackoverflow.com/questions/tagged/php" class="post-tag" title="show questions tagged &#39;php&#39;" rel="tag">php</a> <a href="http://stackoverflow.com/questions/tagged/xampp" class="post-tag" title="show questions tagged &#39;xampp&#39;" rel="tag">xampp</a>  or <a href="http://stackoverflow.com/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tbody><tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2013-04-12 07:20:00Z"><b>3 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>297416 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="http://stackoverflow.com/questions/15965376/how-to-configure-xampp-to-send-mail-from-localhost?lastactivity" class="lastactivity-link" title="2016-09-22 08:44:51Z">3 months ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </tbody></table>
+			    </div>
+			<div class="module community-bulletin" data-tracker="cb=1">
+    <div class="related">
+                <div class="bulletin-title">
+                    Blog
+                </div>
+                <hr>
+    <div class="spacer">
+        <div class="bulletin-item-type">
+                <a href="http://stackoverflow.blog/2017/01/The-2017-Stack-Overflow-Developer-Survey-is-Now-Live/?cb=1" class="question-hyperlink">
+<div class="favicon favicon-stackexchangemeta" title="Meta Stack Exchange"></div>                </a>
+            </div>
+                <div class="bulletin-item-content">
+                    <a href="http://stackoverflow.blog/2017/01/The-2017-Stack-Overflow-Developer-Survey-is-Now-Live/?cb=1" class="question-hyperlink">The 2017 Stack Overflow Developer Survey is Now Live</a>
+                </div>
+                <br class="cbt">
+            </div>
+    </div>
+</div>			
+			<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk665909845",[5,17,2221]).setZone(45); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk665909845"><div id="careersadsdoublehigh" style="display:none;"></div><img height="0px" width="0px" border="0" style="position: absolute; display: none !important;" src="http://engine.adzerk.net/i.gif?e=eyJhdiI6NDE0LCJhdCI6NSwiYnQiOjAsImNtIjo5MjEsImNoIjoxMTc4LCJjayI6e30sImNyIjoyNjg4LCJkaSI6IjgxMzUyZWZlNGMwZDRhMmY5MzkyMzczNWNiNjUwNGVjIiwiZG0iOjEsImZjIjoyNDg1LCJmbCI6MjY2MywiaXAiOiIyMTIuMTc4LjIzMy43MSIsImt3IjoicGhwLHhhbXBwIiwibnciOjIyLCJwYyI6MCwiZWMiOjAsInByIjo2MTczNywicnQiOjEsInJmIjoiaHR0cHM6Ly93d3cuZ29vZ2xlLnJzLyIsInN0Ijo4Mjc3LCJ1ayI6InVlMS03NWMxYmNlODBmMDk0ZjU1YjZlYzU2ODM4NmIxZTdjYSIsInpuIjo0NSwidHMiOjE0ODQ0MDQzODAyNzEsImJmIjp0cnVlLCJwbiI6ImFkemVyazY2NTkwOTg0NSIsImZxIjowfQ&amp;s=RJ173eBVKztV6R3wQaI-S7UaGUA"></div>
+            <div id="hireme" class="clc-jobs-multi orange tagged"><a class="top " href="https://stackoverflow.com/jobs" target="_blank" data-clc-click="https://clc.stackoverflow.com/click?an=42T0fG3bZXPFgzW8JDiIiYmBgYGFAQQOzPnMkB2twcBwXAMi1gASZWQEcWazcDAx9Fczg8SfNi-c-8Ty9s4Ie0bmgoyC2Q62DAxf7MBajJrrVy6wlBANgEqF8DAxsLWAdaU0mOV9sVQMzYJISes7MDDkOTNApDym_bBMPZpnz9DRJmiovNV17VN7AA&amp;cr=10439&amp;ct=1&amp;url=https%3A%2F%2Fstackoverflow.com%2Fjobs&amp;sig=psmNZQpVUNivuA"><span>Looking for a job?</span></a><div class="middle"><ul class="jobs"><li class="&quot;clc-dismissable&quot;"><div class="job-wrap"><a class="job" title="Prototyping in PHP, MySQL and Javascript at Inock France. Click to learn more." href="https://stackoverflow.com/jobs/17069/prototyping-in-php-mysql-and-javascript-inock-france" target="_blank" data-clc-click="https://clc.stackoverflow.com/click?an=42T0fG3bZXPFgzW8JDiIiYmBgYGFAQQOzPnMkB2twcBwXAMi1gASZWQEcWazcDAx9Fczg8SfNi-c-8Ty9s4Ie0bmgoyC2Q62DAxf7MBajJrrVy6wlBANgEqF8DAxsLWAdaU0mOV9sVQMzYJISes7MDDkOTNApDym_bBMPZpnz9DRJmiovNV17VN7AA&amp;cr=228239&amp;ct=0&amp;url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2F17069%2Fprototyping-in-php-mysql-and-javascript-inock-france&amp;sig=bYvz0CHB6rTZkA"><div class="title">Prototyping in PHP, MySQL and Javascript</div><div><span class="company">Inock France</span><span class="location">Paris, France</span></div><div class="opts"><span class="opt remote">Remote</span></div><span class="post-tag highlight">php</span><span class="post-tag">mysql</span></a></div><a class="clc-dismiss" data-clc-click="https://clc.stackoverflow.com/click?an=42T0fG3bZXPFgzW8JDiIiYmBgYGFAQQOzPnMkB2twcBwXAMi1gASZWQEcWazcDAx9Fczg8SfNi-c-8Ty9s4Ie0bmgoyC2Q62DAxf7MBajJrrVy6wlBANgEqF8DAxsLWAdaU0mOV9sVQMzYJISes7MDDkOTNApDym_bBMPZpnz9DRJmiovNV17VN7AA&amp;cr=228239&amp;ct=-1&amp;sig=8bnzrWa4tfeOkg" data-clc-meta-target="-1"><span class="clc-tooltip above-left">dismiss this job</span></a></li><li class="&quot;clc-dismissable&quot;"><div class="job-wrap"><a class="job" title="Operations Engineer (m/f) at ABOUT YOU GmbH. Click to learn more." href="https://stackoverflow.com/jobs/103345/operations-engineer-m-f-about-you-gmbh" target="_blank" data-clc-click="https://clc.stackoverflow.com/click?an=42T0fG3bZXPFgzW8JDiIiYmBgYGFAQQOzPnMkB2twcBwXAMi1gASZWQEcWazcDAx9Fczg8SfNi-c-8Ty9s4Ie0bmgoyC2Q62DAxf7MBajJrrVy6wlBANgEqF8DAxsLWAdaU0mOV9sVQMzYJISes7MDDkOTNApDym_bBMPZpnz9DRJmiovNV17VN7AA&amp;cr=16116&amp;ct=0&amp;url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2F103345%2Foperations-engineer-m-f-about-you-gmbh&amp;sig=pTO20G-mMVKbJA"><div class="title">Operations Engineer (m/f)</div><div><span class="company">ABOUT YOU GmbH</span><span class="location">Hamburg, Deutschland</span></div><div class="opts"><span class="opt relocate">Relocation</span><span class="opt visa">Visa Sponsorship</span></div><span class="post-tag highlight">php</span><span class="post-tag">bash</span></a></div><a class="clc-dismiss" data-clc-click="https://clc.stackoverflow.com/click?an=42T0fG3bZXPFgzW8JDiIiYmBgYGFAQQOzPnMkB2twcBwXAMi1gASZWQEcWazcDAx9Fczg8SfNi-c-8Ty9s4Ie0bmgoyC2Q62DAxf7MBajJrrVy6wlBANgEqF8DAxsLWAdaU0mOV9sVQMzYJISes7MDDkOTNApDym_bBMPZpnz9DRJmiovNV17VN7AA&amp;cr=16116&amp;ct=-1&amp;sig=IHiDzPZP0Q6URw" data-clc-meta-target="-1"><span class="clc-tooltip above-left">dismiss this job</span></a></li><li class="&quot;clc-dismissable&quot;"><div class="job-wrap"><a class="job" title="Incredible CakePHP Developer at Clevertech. Click to learn more." href="https://stackoverflow.com/jobs/131909/incredible-cakephp-developer-clevertech" target="_blank" data-clc-click="https://clc.stackoverflow.com/click?an=42T0fG3bZXPFgzW8JDiIiYmBgYGFAQQOzPnMkB2twcBwXAMi1gASZWQEcWazcDAx9Fczg8SfNi-c-8Ty9s4Ie0bmgoyC2Q62DAxf7MBajJrrVy6wlBANgEqF8DAxsLWAdaU0mOV9sVQMzYJISes7MDDkOTNApDym_bBMPZpnz9DRJmiovNV17VN7AA&amp;cr=230406&amp;ct=0&amp;url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2F131909%2Fincredible-cakephp-developer-clevertech&amp;sig=-qHZVmDA13y_lQ"><div class="title">Incredible CakePHP Developer</div><div><span class="company">Clevertech</span><span class="location">No office location</span></div><div class="opts"><span class="opt remote">Remote</span></div><span class="post-tag">cakephp</span><span class="post-tag highlight">php</span></a></div><a class="clc-dismiss" data-clc-click="https://clc.stackoverflow.com/click?an=42T0fG3bZXPFgzW8JDiIiYmBgYGFAQQOzPnMkB2twcBwXAMi1gASZWQEcWazcDAx9Fczg8SfNi-c-8Ty9s4Ie0bmgoyC2Q62DAxf7MBajJrrVy6wlBANgEqF8DAxsLWAdaU0mOV9sVQMzYJISes7MDDkOTNApDym_bBMPZpnz9DRJmiovNV17VN7AA&amp;cr=230406&amp;ct=-1&amp;sig=oBRl7-AeBSKFjw" data-clc-meta-target="-1"><span class="clc-tooltip above-left">dismiss this job</span></a></li><li class="&quot;clc-dismissable&quot;"><div class="job-wrap"><a class="job" title="C++ Chief Software Architect - $100k at Crossover. Click to learn more." href="https://stackoverflow.com/jobs/129488/c-plus-plus-chief-software-architect-100k-crossover" target="_blank" data-clc-click="https://clc.stackoverflow.com/click?an=42T0fG3bZXPFgzW8JDiIiYmBgYGFAQQOzPnMkB2twcBwXAMi1gASZWQEcWazcDAx9Fczg8SfNi-c-8Ty9s4Ie0bmgoyC2Q62DAxf7MBajJrrVy6wlBANgEqF8DAxsLWAdaU0mOV9sVQMzYJISes7MDDkOTNApDym_bBMPZpnz9DRJmiovNV17VN7AA&amp;cr=17262&amp;ct=0&amp;url=https%3A%2F%2Fstackoverflow.com%2Fjobs%2F129488%2Fc-plus-plus-chief-software-architect-100k-crossover&amp;sig=hA_ScCPXXsAZ-Q"><div class="title">C++ Chief Software Architect - $100k</div><div><span class="company">Crossover</span><span class="location">No office location</span></div><div class="opts"><span class="opt remote">Remote</span></div><span class="post-tag">c++</span><span class="post-tag">linux</span></a></div><a class="clc-dismiss" data-clc-click="https://clc.stackoverflow.com/click?an=42T0fG3bZXPFgzW8JDiIiYmBgYGFAQQOzPnMkB2twcBwXAMi1gASZWQEcWazcDAx9Fczg8SfNi-c-8Ty9s4Ie0bmgoyC2Q62DAxf7MBajJrrVy6wlBANgEqF8DAxsLWAdaU0mOV9sVQMzYJISes7MDDkOTNApDym_bBMPZpnz9DRJmiovNV17VN7AA&amp;cr=17262&amp;ct=-1&amp;sig=PVtj0ZX68WpuuA" data-clc-meta-target="-1"><span class="clc-tooltip above-left">dismiss this job</span></a></li></ul></div><img src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/impression.gif" class="impression" style="display: none;"></div>
+        <script>
+window.clcfl_request = 'Alaz9TyKPNQIAAAAAMCc8wACAAAAAgAAAAALAAAAfHBocHx4YW1wcHwAe67uiOSEeliqJQ';
+;(function(n){var t,r,i;try{if(typeof[].indexOf!="function")return;if(window.attachEvent&&!window.addEventListener)return;if(n.allowed[0]!=="*"&&n.allowed.indexOf(location.hostname)===-1)return;t=window;t.clc=t.clc||{};r=t.clc_request||t.clcfl_request;r||console.warn("clc_request missing");t.clc.init=t.clc.init||[];t.clc.init.push(function(n){return n.load()});t.clc.options=n;i=document.createElement("script");i.async=!0;i.src=n.lib;document.body.appendChild(i)}catch(u){console.error("[clc] Error in loader:",u)}}).call(null, {"azw":true,"kt":2000,"tto":true,"autoload":true,"d":{"sb":["hireme","clc-sb"],"tlb":["careers1","clc-tlb"],"mlb":["careers3","clc-mlb"]},"allowed":["stackoverflow.com","serverfault.com","blog.codinghorror.com","talent.stackoverflow.com"],"h":"clc.stackoverflow.com","u":"//clc.stackoverflow.com/markup.js","lib":"//cdn.sstatic.net/clc/clc.min.js?v=1492847a8483"});        </script>
+			
+
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/24611689?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">2</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/24611689/how-i-send-emails-with-localhost-xampp-using-php?noredirect=1&amp;lq=1" class="question-hyperlink">How i send emails with localhost XAMPP using PHP</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/39541932?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/39541932/how-to-configure-xampp-to-send-email-from-localhost-php?noredirect=1&amp;lq=1" class="question-hyperlink">how to configure XAMPP to send email from localhost php</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/30213408?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/30213408/how-to-send-mails-to-any-email-accountgmail-hotmail-using-a-form?noredirect=1&amp;lq=1" class="question-hyperlink">how to Send mails to any email account(gmail,hotmail) using a form?</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/31533808?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/31533808/mails-are-not-getting-sent-using-xampp-but-the-mail-content-is-stored-as-text-fo?noredirect=1&amp;lq=1" class="question-hyperlink">mails are not getting sent using xampp but the mail content is stored as text format in mailoutput folder</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/30637759?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">-1</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/30637759/does-xampp-have-a-mail-function-using-php?noredirect=1&amp;lq=1" class="question-hyperlink">Does Xampp have a mail function using php?</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/31177035?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/31177035/how-to-send-email-using-localhost-xampp?noredirect=1&amp;lq=1" class="question-hyperlink">How to send email using localhost/xampp?</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/37093902?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/37093902/testing-php-mail-locally?noredirect=1&amp;lq=1" class="question-hyperlink">Testing php mail() locally</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/28524614?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/28524614/sending-mail-successfully-using-php-mail-but-not-receiving-it?noredirect=1&amp;lq=1" class="question-hyperlink">Sending Mail Successfully using PHP mail() but not receiving it</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/32624038?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/32624038/php-send-mail-with-xampp-local-host-not-working?noredirect=1&amp;lq=1" class="question-hyperlink">PHP - send mail with xampp local host not working</a>
+</div>
+<div class="spacer">
+	<a href="http://stackoverflow.com/q/38843368?lq=1" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes  default">0</div>
+	</a>
+	<a href="http://stackoverflow.com/questions/38843368/how-do-i-setup-xampp-server-for-e-mail-sending-on-unix-machine?noredirect=1&amp;lq=1" class="question-hyperlink">How do I setup XAMPP server for E-Mail Sending on UNIX machine</a>
+</div>					<div class="spacer more">
+				<a href="http://stackoverflow.com/questions/linked/15965376?lq=1">see more linked questions…</a>
+			</div>
+	</div>
+</div>
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/17699607?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">2</div></a><a href="http://stackoverflow.com/questions/17699607/cant-send-mail-from-localhost-xampp?rq=1" class="question-hyperlink">Can't send mail from localhost/xampp</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/19908389?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">1</div></a><a href="http://stackoverflow.com/questions/19908389/how-to-configure-xampp-php-to-send-mail-from-localhost-via-secure-smtp-my-isp?rq=1" class="question-hyperlink">How to configure XAMPP PHP to send mail from localhost via secure smtp my ISP</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/23271717?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="http://stackoverflow.com/questions/23271717/e-mails-do-not-send-out-from-localhost-xampp-3-2-1?rq=1" class="question-hyperlink">E-mails do not send out from localhost xampp 3.2.1</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/24867089?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="http://stackoverflow.com/questions/24867089/xampp-and-php-mail-from-localhost?rq=1" class="question-hyperlink">XAMPP and PHP mail from localhost</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/26720867?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="http://stackoverflow.com/questions/26720867/sending-mails-from-localhost-in-xampp-with-php?rq=1" class="question-hyperlink">Sending mails from localhost in XAMPP with PHP</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/27562117?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="http://stackoverflow.com/questions/27562117/unable-to-send-mails-on-localhost-xampp-configured-with-gmail-smtp?rq=1" class="question-hyperlink">Unable to send mails on localhost XAMPP configured with Gmail SMTP</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/32263649?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="http://stackoverflow.com/questions/32263649/php-mail-sending-in-xampp-localhost-is-not-working?rq=1" class="question-hyperlink">php mail sending in xampp localhost is not working</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/34905840?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="http://stackoverflow.com/questions/34905840/how-to-send-mail-from-xampp-localhost-by-a-gmail-account?rq=1" class="question-hyperlink">how to send mail from xampp localhost by a gmail account</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/39541932?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="http://stackoverflow.com/questions/39541932/how-to-configure-xampp-to-send-email-from-localhost-php?rq=1" class="question-hyperlink">how to configure XAMPP to send email from localhost php</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/39843864?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">1</div></a><a href="http://stackoverflow.com/questions/39843864/cant-send-mail-from-localhost-even-though-i-configured-xampp?rq=1" class="question-hyperlink">Can't send mail from localhost even though i configured XAMPP</a></div>
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="http://stackexchange.com/questions?tab=hot" class="js-gps-track" data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li>
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/67702/building-a-syringe-gun" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Building a Syringe Gun
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/67826/castle-moat-full-of-zombies" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Castle Moat Full of Zombies
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-ell" title="English Language Learners Stack Exchange"></div><a href="http://ell.stackexchange.com/questions/115055/why-is-the-correct-spelling-eating-and-not-eatting" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:481 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why is the correct spelling "eating" and not "eatting"?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/106496/score-rock-paper-scissors" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Score rock-paper-scissors
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-politics" title="Politics Stack Exchange"></div><a href="http://politics.stackexchange.com/questions/14393/why-did-the-us-population-elect-to-prohibit-alcohol-instead-of-some-other-subst" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:475 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why did the US population elect to prohibit alcohol (instead of some other substance) during Prohibition
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/106710/find-five-friends-to-eat-chicken-with-paul" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Find five friends to eat chicken with Paul
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-travel" title="Travel Stack Exchange"></div><a href="http://travel.stackexchange.com/questions/85973/what-does-this-traffic-sign-with-a-crossed-out-black-octagon-mean" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:273 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What does this traffic sign with a crossed-out black octagon mean?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-philosophy" title="Philosophy Stack Exchange"></div><a href="http://philosophy.stackexchange.com/questions/40309/is-finding-truth-possible" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:265 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is finding truth possible?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-security" title="Information Security Stack Exchange"></div><a href="http://security.stackexchange.com/questions/147820/should-i-contact-the-manufacturer-if-their-product-allows-access-to-other-users" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:162 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Should I contact the manufacturer if their product allows access to other users' location information?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-skeptics" title="Skeptics Stack Exchange"></div><a href="http://skeptics.stackexchange.com/questions/36695/are-there-96-million-workers-in-the-us-who-want-a-job-and-cant-get-one" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:212 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Are there 96 million workers in the US who want a job and can't get one?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-electronics" title="Electrical Engineering Stack Exchange"></div><a href="http://electronics.stackexchange.com/questions/280106/design-circuit-for-flashing-leds-using-555" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:135 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Design circuit for flashing LEDs using 555
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-workplace" title="The Workplace Stack Exchange"></div><a href="http://workplace.stackexchange.com/questions/82750/is-it-right-to-ask-candidate-why-he-is-applying-for-developer-while-he-was-a-lea" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:423 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is it right to ask candidate why he is applying for developer while he was a leader?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-unix" title="Unix &amp; Linux Stack Exchange"></div><a href="http://unix.stackexchange.com/questions/337309/why-different-exit-status" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:106 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why different exit status?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/2097272/has-the-following-proof-on-finite-groups-a-flaw-or-is-it-valid-and-i-do-not-see" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Has the following proof on finite groups a flaw or is it valid and I do not see it
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/106745/no-strings-attached" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    No strings attached!
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-security" title="Information Security Stack Exchange"></div><a href="http://security.stackexchange.com/questions/148189/safe-to-download-router-firmware-over-unencrypted-http" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:162 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Safe to download router firmware over unencrypted HTTP?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/368155/adjective-for-must-not-be-present" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Adjective for "must not be present"
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/106079/detect-ms-windows" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Detect MS Windows
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-travel" title="Travel Stack Exchange"></div><a href="http://travel.stackexchange.com/questions/86084/how-to-get-to-schiphol-airport-at-5am-using-public-transport-from-amsterdam" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:273 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to get to Schiphol Airport at 5am using public transport from Amsterdam?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/367721/is-alcohol-called-spirits-due-to-linking-of-imagery" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is alcohol called spirits due to linking of imagery?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/67556/why-would-a-scientifically-advanced-future-community-believe-in-multiple-gods" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why would a scientifically advanced future community believe in multiple gods?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/67759/would-a-trench-filled-with-mercury-stop-zombies-in-their-tracks" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Would a trench filled with mercury stop zombies in their tracks?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-stackoverflow" title="Stack Overflow"></div><a href="http://stackoverflow.com/questions/41632387/this-code-hangs-in-release-mode-but-works-fine-in-debug-mode" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:1 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    This code hangs in release mode but works fine in debug mode
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/2097370/the-solution-for-the-velocity-is" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    The solution for the velocity is
+                </a>
+
+            </li>
+    </ul>
+
+        
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="http://stackoverflow.com/feeds/question/15965376" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/15965376/ivc/bd2f');});
+</script>
+<noscript>
+    &lt;div&gt;&lt;img src="/posts/15965376/ivc/bd2f" class="dno" alt="" width="0" height="0"&gt;&lt;/div&gt;
+</noscript><div style="display:none" id="prettify-lang">lang-php</div></div>
+
+
+        </div>
+    </div><script async="" src="./php - How to configure XAMPP to send mail from localhost_ - Stack Overflow_files/clc.min.js.download"></script>
+    <div id="footer" class="categories">
+        <div class="footerwrap">            
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                    <a href="http://stackoverflow.com/company/about">about us</a>
+                        <a href="http://stackoverflow.com/tour">tour</a>
+                    <a href="http://stackoverflow.com/help">help</a>
+                    <a href="http://stackoverflow.blog/?blb=1">blog</a>
+                        <a href="http://chat.stackoverflow.com/">chat</a>
+                    <a href="http://data.stackexchange.com/">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackoverflow.com/company/work-here">work here</a>
+                    <a href="https://www.stackoverflowbusiness.com/advertise">advertising info</a>
+
+                    <a onclick="StackExchange.switchMobile(&quot;on&quot;)">mobile</a>
+                    <b><a href="http://stackoverflow.com/contact">contact us</a></b>
+                        <b><a href="http://meta.stackoverflow.com/">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tbody><tr>
+            <th colspan="3">
+                Technology
+            </th>
+            <th>
+                Life / Arts
+            </th>
+            <th>
+                Culture / Recreation
+            </th>
+            <th>
+                Science
+            </th>
+            <th>
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="http://stackoverflow.com/" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="http://serverfault.com/" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="http://superuser.com/" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="http://webapps.stackexchange.com/" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="http://askubuntu.com/" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="http://webmasters.stackexchange.com/" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="http://gamedev.stackexchange.com/" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="http://tex.stackexchange.com/" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                        <li><a href="http://softwareengineering.stackexchange.com/" title="professionals, academics, and students working within the systems development life cycle who care about creating, delivering, and maintaining software responsibly">Software Engineering</a></li>
+                        <li><a href="http://unix.stackexchange.com/" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                        <li><a href="http://apple.stackexchange.com/" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="http://wordpress.stackexchange.com/" title="WordPress developers and administrators">WordPress Development</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://gis.stackexchange.com/" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="http://electronics.stackexchange.com/" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="http://android.stackexchange.com/" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="http://security.stackexchange.com/" title="information security professionals">Information Security</a></li>
+                        <li><a href="http://dba.stackexchange.com/" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="http://drupal.stackexchange.com/" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="http://sharepoint.stackexchange.com/" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="http://ux.stackexchange.com/" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="http://mathematica.stackexchange.com/" title="users of Wolfram Mathematica">Mathematica</a></li>
+                        <li><a href="http://salesforce.stackexchange.com/" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                        <li><a href="http://expressionengine.stackexchange.com/" title="administrators, end users, developers and designers for ExpressionEngine® CMS">ExpressionEngine® Answers</a></li>
+                        <li><a href="http://crypto.stackexchange.com/" title="software developers, mathematicians and others interested in cryptography">Cryptography</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://codereview.stackexchange.com/" title="peer programmer code reviews">Code Review</a></li>
+                        <li><a href="http://magento.stackexchange.com/" title="users of the Magento e-Commerce platform">Magento</a></li>
+                        <li><a href="http://dsp.stackexchange.com/" title="practitioners of the art and science of signal, image and video processing">Signal Processing</a></li>
+                        <li><a href="http://raspberrypi.stackexchange.com/" title="users and developers of hardware and software for Raspberry Pi">Raspberry Pi</a></li>
+                        <li><a href="http://codegolf.stackexchange.com/" title="programming puzzle enthusiasts and code golfers">Programming Puzzles &amp; Code Golf</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://photo.stackexchange.com/" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="http://scifi.stackexchange.com/" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="http://graphicdesign.stackexchange.com/" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="http://movies.stackexchange.com/" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                        <li><a href="http://music.stackexchange.com/" title="musicians, students, and enthusiasts">Music: Practice &amp; Theory</a></li>
+                        <li><a href="http://cooking.stackexchange.com/" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="http://diy.stackexchange.com/" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="http://money.stackexchange.com/" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                        <li><a href="http://academia.stackexchange.com/" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (8)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://english.stackexchange.com/" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="http://skeptics.stackexchange.com/" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="http://judaism.stackexchange.com/" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="http://travel.stackexchange.com/" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="http://christianity.stackexchange.com/" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="http://ell.stackexchange.com/" title="speakers of other languages learning English">English Language Learners</a></li>
+                        <li><a href="http://japanese.stackexchange.com/" title="students, teachers, and linguists wanting to discuss the finer points of the Japanese language">Japanese Language</a></li>
+                        <li><a href="http://gaming.stackexchange.com/" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                        <li><a href="http://bicycles.stackexchange.com/" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="http://rpg.stackexchange.com/" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                        <li><a href="http://anime.stackexchange.com/" title="anime and manga fans">Anime &amp; Manga</a></li>
+                        <li><a href="http://mechanics.stackexchange.com/" title="mechanics and DIY enthusiast owners of cars, trucks, and motorcycles">Motor Vehicle Maintenance &amp; Repair</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (17)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://mathoverflow.net/" title="professional mathematicians">MathOverflow</a></li>
+                        <li><a href="http://math.stackexchange.com/" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="http://stats.stackexchange.com/" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="http://cstheory.stackexchange.com/" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="http://physics.stackexchange.com/" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="http://chemistry.stackexchange.com/" title="scientists, academics, teachers and students">Chemistry</a></li>
+                        <li><a href="http://biology.stackexchange.com/" title="biology researchers, academics, and students">Biology</a></li>
+                        <li><a href="http://cs.stackexchange.com/" title="students, researchers and practitioners of computer science">Computer Science</a></li>
+                        <li><a href="http://philosophy.stackexchange.com/" title="those interested in the study of the fundamental nature of knowledge, reality, and existence">Philosophy</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (3)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://meta.stackexchange.com/" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="http://stackapps.com/" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="http://area51.stackexchange.com/" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="https://www.stackoverflowbusiness.com/talent">Stack Overflow Talent</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</tbody></table>
+                </div>
+            </div>
+            <div id="copyright">
+                site design / logo © 2017 Stack Exchange Inc; user contributions licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2017.1.13.24681
+            </div>
+                </div>
+    </div>
+    <noscript>
+        &lt;div id="noscript-warning"&gt;Stack Overflow works best with JavaScript enabled&lt;img src="https://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"&gt;&lt;/div&gt;
+    </noscript>
+
+<script>var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script>
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    
+    
+        
+        ados.run.push(function () {
+                setTimeout(function () { $("#adzerk-user-match").remove(); }, window.AUMIframeDone ? 0 : 2000);
+                ados_setKeywords('php,xampp');; ados_load();
+        });   
+        
+</script>
+
+    <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+                ga('create', 'UA-5620270-1');
+                ga('create', 'UA-5620270-59', {name: 'pageData', sampleRate: 5 });
+                ga('set', 'dimension2', '|php|xampp|');
+                ga('pageData.set', 'dimension2', '|php|xampp|');
+                ga('send', 'pageview');
+                ga('pageData.send', 'pageview');
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+                qc.async = true;
+                qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                s.parentNode.insertBefore(qc, s);
+                _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+                            var sc=document.createElement('script');
+                sc.async=true;
+                sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+                s.parentNode.insertBefore(sc, s);
+                _comscore.push({ c1: "2", c2: "17440561" });
+        })();
+
+    </script>
+        
+    
+            <script type="text/javascript">
+                
+                (function(appendChild) {
+                    Node.prototype.appendChild = function() {
+                        var parent = this;
+                        var newNode = arguments[0];
+                        if (parent.nodeName === 'HEAD'
+                            && newNode
+                            && newNode.nodeName === 'SCRIPT'
+                            && newNode.src) {
+                            
+                            window.setTimeout(function() {
+                                var result = newNode.src.match(/^https:\/\/maps\.googleapis\.com\/maps\/api\/place\/js\/(\w+)Service\./i) || [];
+                                var service = result[1];
+                                if (service) {
+                                    if (service === 'Autocompletion') service =  2;
+                                    else if (service === 'Place') service = 1;
+                                    else service = 0;
+                                    StackExchange.using('gps', function() {
+                                        StackExchange.gps.track('google_maps_places_api.call', { service: service });
+                                    });
+                                }
+                            }, 0);
+                        }
+                        return appendChild.apply(this, arguments);
+                    };
+                })(Node.prototype.appendChild);
+            </script>
+    
+</body></html>

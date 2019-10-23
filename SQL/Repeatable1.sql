@@ -1,0 +1,20 @@
+USE Gigatron;
+GO
+
+--1
+
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+
+BEGIN TRAN;
+
+  SELECT *
+  FROM Proizvodi
+  WHERE ProizvodID = 1;
+
+--3
+
+  SELECT *
+  FROM Proizvodi
+  WHERE ProizvodID = 1;
+
+COMMIT TRAN;
