@@ -154,38 +154,3 @@
 <span class="c9"></span>
 ### <span class="c30">Testiranje</span>
 <span class="c9">Napraviti poseban .php fajl u kome cete instancirati oba tipa korisnika i ostale klase, simulirati kupovinu tarifnih dodataka, surfovati, generisati racune itd. &nbsp;Potrebno je svaku metodu propratiti ispisom na ekran sta se desava. </span>
-### <span class="c30">Predaja</span>
-<span>Zadatak se predaje putem mail-a na </span><span class="c23">[tmihajlovic@raf.rs](mailto:tmihajlovic@raf.rs)</span><span class="c9">. PHP projekat imenovati na sledeći način: “pwa_d2_2020_ime_prezime_ind”. Npr. “pwa_d2_2020_pera_peric_s16_16”.</span>
-
-<span class="c9">U tekstu mail-a obavezno navesti:</span>
-
-- <span class="c9">Ime i prezime</span>
-- <span class="c9">Broj indeksa</span>
-- <span class="c9">Grupa, po zvaničnom spisku</span>
-- <span class="c9">Razvojno okruženje</span>
-
-<span class="c9">Subject mail-a mora da bude u obliku: “[PWA 2020] D2 ime_prezime_ind”.</span>
-
-<span class="c9">Npr. “[PWA 2020] D2 pera_peric_s16_16”</span>
-
-<span class="c9">Naziv arhive mora da bude u obliku: “pwa_2020_d2_ime_prezime_ind.zip”</span>
-
-<span class="c9">Npr. “pwa_2020_d2_pera_peric_s16_16.zip”</span>
-
-<span class="c9">Rok za predaju je:</span>
-
-- <span class="c9">Ponedeljak, 11. maj 23:59:59</span>
-
-<span class="c9">Neće se pregledati zadaci (tj. biće dodeljeno 0 poena) ako se desi bilo koje od:</span>
-
-- <span class="c9">Sadržaj mail-a nije po navedenom obliku.</span>
-- <span class="c9">Subject mail-a nije po navedenom obliku.</span>
-- <span class="c9">Naziv arhive nije po navedenom obliku.</span>
-- <span class="c9">Predaja se desi nakon navedenog roka.</span>
-
-### <span class="c32">Odbrana</span>
-<span class="c9">Odbrana domaćih zadataka je obavezna. Termin za odbranu drugog domaćeg zadatka će biti naknadno objavljen. Odbrane će se vršiti po grupama. Ako ste iz bilo kog razloga sprečeni da prisustvujete odbrani, obavezno to najavite što pre, kako bismo mogli da zakažemo vanredni termin za odbranu. </span>
-
-<span class="c9">Svrha odbrane je da se pokaže autentičnost zadatka. Ovo podrazumeva odgovaranje na pitanja u vezi načina izrade zadatka, ili izvršavanje neke izmene nad zadatkom na licu mesta. U slučaju da odbrana nije uspešna, dodeljuje se -20 poena na domaćem zadatku.</span>
-
-<span>Zadatak je moguće raditi parcijalno, ali obavezno je da može da se pokrene.</span>
